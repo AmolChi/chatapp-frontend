@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Chat-App
+It is a fully functional chat application on localhost:3000, uses ReactJS, Express, MongoDB and Socket.io. Other than that uses APIs such as dicebear for random image generation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For using this application, first start the server. For the server you must have MongoDBCompass installed on your system and the port of MongoDB should 27017 and if the port of MongoDB is different please change it in the .env file present in the server folder
+ 
+ Start the server using the command npm start or yarn start while in the server folder
 
-## Available Scripts
+After starting the server in a new terminal open the public folder and start it by Yarn start. Then on http://localhost:3000, a react app will be published showing the login page
+Now if you have an existing user then use the ID Password to log in or create a new user using the register icon
+Further on this Application uses dicebear API to generate avatars for a newly added user based on an input dialog box. This avatar is associated with the user and stored in the MongoDB database Users
+Further on this also features emoji icons from React-Emoji library. The live telecast of message is done through Socket.io if both the users are online else the message is saved in the messages database in MongoDB and whenever the user logs in the messages are shown in his chat
 
-In the project directory, you can run:
 
-### `npm start`
+New Developments could be:
+  1. Newest chat pop up on the top with how many new messages showing
+  2. Sharing of video/audio/text files in the chat
+  3. Features such as audio/video call functionality
+  4. Deploying the app on a server
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Screen Shots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/AmolChi/Chat-App/assets/75240926/041dcc84-2cb5-4e88-a4ca-4d39667d1dca)
 
-### `npm test`
+![image](https://github.com/AmolChi/Chat-App/assets/75240926/844059e1-6d66-4e22-ae14-64355dc1dc7f)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://github.com/AmolChi/Chat-App/assets/75240926/a84a8235-cd71-4b85-b949-b48ccc1db537)
 
-### `npm run build`
+![image](https://github.com/AmolChi/Chat-App/assets/75240926/84e5afa9-6012-40fe-8c65-967202fa798e)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/AmolChi/Chat-App/assets/75240926/d81823ed-7190-409a-9f88-e74f1823685d)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://github.com/AmolChi/Chat-App/assets/75240926/31571ed5-f2d6-48ce-ae1d-c5e4c90443dd)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
